@@ -79,7 +79,7 @@ export async function createUser(req: Request, res: Response): Promise<unknown> 
       email: req.body.email,
       password: passwordHash,
       phoneNumber: req.body.phoneNumber,
-      isVerified: false,
+      isVerified: true,
       walletBalance: 0.0,
       role: 'user',
     });
